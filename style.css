@@ -28,7 +28,7 @@ li{
     list-style:none;
     padding-right: 2rem;
 }
-a{
+.navbar a{
     text-decoration:none;
     color: #fff;
 }
@@ -52,8 +52,9 @@ a{
     display: -ms-flexbox; /* IE10 */
     display: flex;
     -ms-flex-wrap: wrap; /* IE10 */
-    flex-wrap: wrap;
-    padding: 0 4px;
+     padding-top: 2px;
+     flex-wrap: wrap;
+     justify-content: space-evenly;
   }
   
   /* Create four equal columns that sits next to each other */
@@ -71,9 +72,17 @@ a{
     transition: 0.5s;
   }
 .column img:hover{
-    transform: scale(1.05);
+    transform: scale(1.02);
 }
   /* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (max-width: 989px) {
+    .column {
+      -ms-flex: 50%;
+      flex: 50%;
+      max-width: 26%;
+    }
+  }
+  
 @media screen and (max-width: 800px) {
     .column {
       -ms-flex: 50%;
@@ -92,4 +101,21 @@ a{
   }
 body{
 background-color: black;
+}
+.footer{
+  background-color: #000;
+  height: 60px;
+  color:white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: monospace;
+}
+.footer a{
+  text-decoration: none;
+  color: #fff;
+}
+.footer a:hover{
+  text-decoration: underline;
+  color: #fff;
 }
