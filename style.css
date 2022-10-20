@@ -141,7 +141,7 @@ li {
     justify-content: space-evenly;
   }
 }
-@media screen and (min-device-width: 425px) {
+@media screen and (max-device-width: 425px) {
   .row {
     width: 97.5%;
     justify-content: space-around;
