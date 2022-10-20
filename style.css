@@ -1,121 +1,251 @@
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
-.navbar{
-    width: 100%;
-    display: flex;
-    height: 60px;
-    align-items: center;
-    background-color: rgba(0, 0, 0, 0);
-    justify-content: space-between ;
+
+.navbar {
+  width: 100%;
+  display: flex;
+  height: 60px;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0);
+  justify-content: space-between;
 }
-.brand{
-    padding-left: 2rem;
-    color: red;
+
+.brand {
+  padding-left: 2rem;
+  color: red;
 }
-.brand h3{
-    font-size: 30px;
+
+.brand h3 {
+  font-size: 30px;
 }
-.right{
-    padding-right:2rem;
-    font-size: 20px;
+
+.right {
+  padding-right: 2rem;
+  font-size: 20px;
 }
-ul{
-    display: flex;  
+
+ul {
+  display: flex;
 }
-li{
-    list-style:none;
-    padding-right: 2rem;
+
+li {
+  list-style: none;
+  padding-right: 2rem;
 }
-.navbar a{
-    text-decoration:none;
-    color: #fff;
+
+.navbar a {
+  text-decoration: none;
+  color: #fff;
 }
-.banner{
-    background-image:url(./images/weeknd.jpg);
+
+.banner {
+  background-image: url(./images/weeknd.jpg);
+  height: 50rem;
+  background-size: cover;
+  background-position-x: center;
+  margin-top: -4rem;
+}
+
+@media screen and (max-width: 2560px) {
+  .banner {
+    height: 76rem;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .banner {
     height: 50rem;
-    background-size: cover;
-    background-position-x: center;
-    margin-top:-4rem;
+  }
 }
-.content{
-    padding: 13rem;
+
+.content {
+  padding: 13rem;
+}
+
+.content h1 {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 700;
 
 }
-.content h1{
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-weight: 700;
+
+@media screen and (max-width: 2560px) {
+  .content h1 {
+    font-size: 88px;
+  }
+}
+
+@media screen and (max-width: 2189px) {
+  .content h1 {
+    font-size: 78px;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .content h1 {
     font-size: 50px;
+  }
 }
+
+@media screen and (max-width: 2560px) {
+  .content {
+    padding: 18rem 29rem;
+  }
+}
+
+@media screen and (max-width: 2189px) {
+  .content {
+    padding: 18rem 24rem;
+  }
+}
+
+@media screen and (max-width: 1880px) {
+  .content {
+    padding: 19rem 14rem;
+  }
+}
+
+@media screen and (max-width: 1154px) {
+  .content {
+    padding: 14rem 7rem;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .content {
+    padding: 13rem 16rem;
+  }
+}
+
+@media screen and (max-width: 976px) {
+  .content {
+    padding: 14rem 7rem;
+  }
+}
+
 .row {
-    display: -ms-flexbox; /* IE10 */
-    display: flex;
-    -ms-flex-wrap: wrap; /* IE10 */
-     padding-top: 2px;
-     flex-wrap: wrap;
-     justify-content: space-evenly;
+  display: -ms-flexbox;
+  /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap;
+  /* IE10 */
+
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+@media screen and (max-width: 990px) {
+  .row {
+    width: 99%;
+    justify-content: space-evenly;
   }
-  
-  /* Create four equal columns that sits next to each other */
-  .column {
-    -ms-flex: 25%; /* IE10 */
-    flex: 25%;
-    max-width: 24%;
-    padding: 0 4px;
+}
+@media screen and (min-device-width: 425px) {
+  .row {
+    width: 97.5%;
+    justify-content: space-around;
   }
-  
+}
+/* Create four equal columns that sits next to each other */
+
+
+.column img {
+  margin-top: 13px;
+  vertical-align: middle;
+  width: 100%;
+  transition: 0.5s;
+}
+
+@media screen and (max-width: 990px) {
   .column img {
+    width: 104%;
     margin-top: 8px;
-    vertical-align: middle;
-    width: 100%;
-    transition: 0.5s;
   }
-.column img:hover{
-    transform: scale(1.02);
 }
-  /* Responsive layout - makes a two column-layout instead of four columns */
-  @media screen and (max-width: 989px) {
-    .column {
-      -ms-flex: 50%;
-      flex: 50%;
-      max-width: 26%;
-    }
-  }
-  
-@media screen and (max-width: 800px) {
-    .column {
-      -ms-flex: 50%;
-      flex: 50%;
-      max-width: 50%;
-    }
-  }
-  
-  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-  @media screen and (max-width: 600px) {
-    .column {
-      -ms-flex: 100%;
-      flex: 100%;
-      max-width: 100%;
-    }
-  }
-body{
-background-color: black;
+
+.column img:hover {
+  transform: scale(1.02);
 }
-.footer{
+@media screen and (max-width: 2560px) {
+  .lap-img{
+    display: none;
+  }
+}
+@media screen and (max-width: 990px) {
+  .lap-img{
+    display: unset;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  #high-res{
+    display: none;
+  }
+}
+.column {
+  -ms-flex: 25%;
+  /* IE10 */
+  flex: 25%;
+  max-width: 24%;
+  padding: 0 3px;
+}
+/* Responsive layout - makes a two column-layout instead of four columns */
+
+
+@media screen and (max-width: 990px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 58%;
+    max-width: 31%;
+    margin-left: 0rem;
+  }
+}
+
+@media screen and (max-device-width: 425px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 60%;
+    max-width: 47%;
+    margin-left: 0rem;
+  }
+}
+
+
+body {
+  background-color: black;
+}
+
+.footer {
   background-color: #000;
   height: 60px;
-  color:white;
+  color: white;
   display: flex;
   align-items: center;
   justify-content: center;
   font-family: monospace;
 }
-.footer a{
+
+@media screen and (max-width: 2560px) {
+  .footer {
+    font-size: 25px;
+    height: 80px;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .footer {
+    font-size: 16px;
+    height: 60px;
+  }
+}
+
+.footer a {
   text-decoration: none;
   color: #fff;
 }
-.footer a:hover{
+
+.footer a:hover {
   text-decoration: underline;
   color: #fff;
 }
