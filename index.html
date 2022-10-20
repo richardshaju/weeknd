@@ -1,9 +1,12 @@
-
 <html>
+
 <head>
     <title>Sample</title>
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -12,9 +15,44 @@
             <h1>THE WEEKND</h1>
             <div class="logo">
                 <a href=" https://open.spotify.com/artist/1Xyo4u8uXC1ZmMpatF05PJ"> <i class="fa fa-spotify"></i></a>
-                <a href="https://www.youtube.com/channel/UC0WP5P-ufpRfjbNrmOWwLBQ"> <i class="fa fa-youtube-play"></i></a>
+                <a href="https://www.youtube.com/channel/UC0WP5P-ufpRfjbNrmOWwLBQ"> <i
+                        class="fa fa-youtube-play"></i></a>
                 <a href="https://www.instagram.com/theweeknd"> <i class="fa fa-instagram"></i></a>
-               
+            </div>
+        </div>
+        <div class="music-player">
+            <div class="image">
+                <img src="https://upload.wikimedia.org/wikipedia/en/e/e6/The_Weeknd_-_Blinding_Lights.png" alt="">
+            </div>
+            <div class="track">
+                <div class="title">
+                    <h4>Blinding Lights</h4>
+                </div>
+                <div class="controls">
+                    <div class="slider_container">
+                        <div class="current-time">00:00</div>
+                        <input type="range" min="1" max="100" value="0" class="seek_slider" onchange="seekTo()">
+                        <div class="total-duration">00:00</div>
+                    </div>
+
+                    <div class="slider_container">
+                        <i class="fa fa-volume-down"></i>
+                        <input type="range" min="1" max="100" value="99" class="volume_slider" onchange="setVolume()">
+                        <i class="fa fa-volume-up"></i>
+                    </div>
+
+                    <div class="buttons">
+                        <div class="prev-track" onclick="prevTrack()">
+                            <i class="fa fa-step-backward fa-2x"></i>
+                        </div>
+                        <div class="playpause-track" onclick="playpauseTrack()">
+                            <i class="fa fa-play-circle fa-5x"></i>
+                        </div>
+                        <div class="next-track" onclick="nextTrack()">
+                            <i class="fa fa-step-forward fa-2x"></i>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
