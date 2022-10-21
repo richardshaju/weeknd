@@ -371,7 +371,7 @@ body {
   width: 100%;
   background: black;
   opacity: 0.9;
-  height: 22rem;
+  height: 22.2rem;
   display: flex;
 
 }
@@ -389,11 +389,11 @@ body {
 
 .track {
   padding: 44px 0px;
+  width: 35rem;
 }
-
 .track .title {
   font-family: 'Poppins', sans-serif;
-  font-size: 54px;
+  font-size: 65px;
   color: azure;
 }
 
@@ -408,8 +408,8 @@ body {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  height: 5px;
-  background: #83a9ff;
+      height: 8px;
+    background: #8500ff;
   -webkit-transition: .2s;
   transition: opacity .2s;
 }
@@ -433,7 +433,7 @@ body {
 }
 
 .seek_slider {
-  width: 65%;
+  width: 71%;
 }
 
 .volume_slider {
@@ -444,7 +444,7 @@ body {
 .total-duration {
   padding: 10px;
   color: azure;
-  font-size: 23px;
+  font-size: 27px
 }
 
 i.fa-volume-down,
@@ -452,7 +452,7 @@ i.fa-volume-up {
   padding: 10px;
   padding: 10px;
   color: azure;
-  font-size: 30px;
+  font-size: 35px;
 }
 
 
@@ -463,6 +463,7 @@ i.fa-volume-up {
   align-items: center;
   margin-bottom: 30px;
   color: azure;
+  font-size: 1.2rem;
   justify-content: center;
 }
 
