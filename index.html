@@ -3,7 +3,7 @@
 <head>
     <title>Sample</title>
     <link rel="stylesheet" href="./style.css">
-    
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,35 +23,34 @@
         </div>
         <div class="music-player">
             <div class="image">
-                <img src="https://m.media-amazon.com/images/I/51UVW34rJTL._SY355_.jpg" alt="">
+                <img class="track-art" src="">
             </div>
             <div class="track">
                 <div class="title">
-                    <h4 id="title">Blinding Lights</h4>
+                    <h4 class="track-name"></h4>
                 </div>
                 <div class="controls">
                     <div class="slider_container">
                         <div class="current-time">00:00</div>
                         <input type="range" min="1" max="100" value="0" class="seek_slider" onchange="seekTo()">
-                        <div class="total-duration" id="hi">00:00</div>
+                        <div class="total-duration">00:00</div>
                     </div>
 
                     <div class="slider_container">
                         <i class="fa fa-volume-down"></i>
-                        <input type="range" min="1" max="100" value="10" class="volume_slider" onchange="setVolume()">
+                        <input type="range" min="1" max="100" value="99" class="volume_slider" onchange="setVolume()">
                         <i class="fa fa-volume-up"></i>
                     </div>
-
                     <div class="buttons">
                         <div class="prev-track" onclick="prevTrack()">
-                            <i class="fa fa-step-backward fa-2x"></i>
-                        </div>
-                        <div class="playpause-track" onclick="playpauseTrack()">
-                            <i class="fa fa-play-circle fa-5x"></i>
-                        </div>
-                        <div class="next-track" onclick="nextTrack()">
-                            <i class="fa fa-step-forward fa-2x"></i>
-                        </div>
+                             <i class="fa fa-step-backward fa-2x"></i>
+                         </div>
+                         <div class="playpause-track" onclick="playpauseTrack()">
+                             <i class="fa fa-play-circle fa-5x"></i>
+                         </div>
+                         <div class="next-track" onclick="nextTrack()">
+                             <i class="fa fa-step-forward fa-2x"></i>
+                         </div>
                     </div>
                 </div>
             </div>
@@ -199,11 +198,11 @@
             </div>
         </div>
     </div>
-  
+
     <div class="footer">
         <p>Designed and Developed by <a href="https://richardshaju.github.io/portfolio/" target="_blank">Richard
                 Shaju</a> &copy;
-            <script type="text/javascript"  src="./script.js">
+            <script type="text/javascript" src="./script.js">
                 var today = new Date()
                 var year = today.getFullYear()
                 document.write(year)

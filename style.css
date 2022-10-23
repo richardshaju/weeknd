@@ -393,7 +393,7 @@ body {
 }
 .track .title {
   font-family: 'Poppins', sans-serif;
-  font-size: 65px;
+  font-size: 60px;
   color: azure;
 }
 
@@ -408,10 +408,11 @@ body {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-      height: 8px;
+  height: 13px;
     background: #8500ff;
   -webkit-transition: .2s;
   transition: opacity .2s;
+  transition: 0.4s all ease-out;
 }
 
 .seek_slider::-webkit-slider-thumb,
@@ -419,8 +420,8 @@ body {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  width: 15px;
-  height: 15px;
+  width: 18px;
+  height: 18px;
   background: white;
   border: 3px solid #3774ff;
   cursor: pointer;
@@ -463,7 +464,7 @@ i.fa-volume-up {
   align-items: center;
   margin-bottom: 30px;
   color: azure;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   justify-content: center;
 }
 
