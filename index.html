@@ -11,16 +11,7 @@
 </head>
 
 <body>
-    <div class="banner">
-        <div class="content">
-            <h1>THE WEEKND</h1>
-            <div class="logo">
-                <a href=" https://open.spotify.com/artist/1Xyo4u8uXC1ZmMpatF05PJ"> <i class="fa fa-spotify"></i></a>
-                <a href="https://www.youtube.com/channel/UC0WP5P-ufpRfjbNrmOWwLBQ"> <i
-                        class="fa fa-youtube-play"></i></a>
-                <a href="https://www.instagram.com/theweeknd"> <i class="fa fa-instagram"></i></a>
-            </div>
-        </div>
+    <div class="banner"></div>
         <div class="music-player">
             <div class="image">
                 <img class="track-art" src="">
@@ -43,19 +34,19 @@
                     </div>
                     <div class="buttons">
                         <div class="prev-track" onclick="prevTrack()">
-                             <i class="fa fa-step-backward fa-2x"></i>
-                         </div>
-                         <div class="playpause-track" onclick="playpauseTrack()">
-                             <i class="fa fa-play-circle fa-5x"></i>
-                         </div>
-                         <div class="next-track" onclick="nextTrack()">
-                             <i class="fa fa-step-forward fa-2x"></i>
-                         </div>
+                            <i class="fa fa-step-backward fa-2x"></i>
+                        </div>
+                        <div class="playpause-track" onclick="playpauseTrack()">
+                            <i class="fa fa-play-circle fa-5x"></i>
+                        </div>
+                        <div class="next-track" onclick="nextTrack()">
+                            <i class="fa fa-step-forward fa-2x"></i>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    
     <div class="parent-row">
         <div class="row">
             <div class="column">
@@ -200,16 +191,27 @@
     </div>
 
     <div class="footer">
-        <p>Designed and Developed by <a href="https://richardshaju.github.io/portfolio/" target="_blank">Richard
-                Shaju</a> &copy;
-            <script type="text/javascript" src="./script.js">
-                var today = new Date()
-                var year = today.getFullYear()
-                document.write(year)
-            </script>
-        </p>
+        <div class="social-media">
+            <div class="footer-title">THE WEEKND</div>
+            <div class="media">
+                <a href=" https://open.spotify.com/artist/1Xyo4u8uXC1ZmMpatF05PJ"> <i class="fa fa-spotify"></i></a>
+                <a href="https://www.youtube.com/channel/UC0WP5P-ufpRfjbNrmOWwLBQ"> <i
+                        class="fa fa-youtube-play"></i></a>
+                <a href="https://www.instagram.com/theweeknd"> <i class="fa fa-instagram"></i></a>
+            </div>
+        </div>
+        <div class="copyrights">
+            <p>Designed and Developed by <a href="https://richardshaju.github.io/portfolio/" target="_blank">Richard
+                    Shaju</a> &copy;
+                <script type="text/javascript">
+                    var today = new Date()
+                    var year = today.getFullYear()
+                    document.write(year)
+                </script>
+            </p>
+        </div>
     </div>
-
+    <script src="./script.js"></script>
 </body>
 
 </html>
