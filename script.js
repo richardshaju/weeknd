@@ -53,8 +53,6 @@ const music_list = [
         music: 'music/heartless.mp3'
     },
 
-  
-
 ];
 
 loadTrack(track_index);
@@ -130,13 +128,13 @@ function setUpdate() {
         let currentSeconds = Math.floor(curr_track.currentTime - currentMinutes * 60);
         let durationMinutes = Math.floor(curr_track.duration / 60);
         let durationSeconds = Math.floor(curr_track.duration - durationMinutes * 60);
-
         if (currentSeconds < 10) { currentSeconds = "0" + currentSeconds; }
         if (durationSeconds < 10) { durationSeconds = "0" + durationSeconds; }
         if (currentMinutes < 10) { currentMinutes = "0" + currentMinutes; }
         if (durationMinutes < 10) { durationMinutes = "0" + durationMinutes; }
 
         curr_time.textContent = currentMinutes + ":" + currentSeconds;
-        total_duration.textContent = durationMinutes + ":" + durationMinutes;
+        total_duration.textContent = durationMinutes + ":" + durationSeconds;
     }
 }
+
