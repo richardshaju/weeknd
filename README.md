@@ -1,3 +1,3 @@
 # weeknd
-Photo collage of Weeknd
+Music PLayer and Photo collage of Weeknd
  https://richardshaju.github.io/weeknd/
